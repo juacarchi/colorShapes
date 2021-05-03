@@ -72,7 +72,7 @@ public class GameplayManager : MonoBehaviour
         correctTag = newForma.GetTagCorrecto();
         CollisionManager.instance.SetTagCorrect(correctTag);
         soundForma = newForma.GetAudioForma();
-        //SoundManager.instance.PlaySFX(soundForma);
+        SoundManager.instance.PlaySFX(soundForma);
         correctForm = newForma.GetCorrectGO();
         incorrectForm = newForma.GetOtherGO();
     }

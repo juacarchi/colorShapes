@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     int numberToSucces;
     bool completed;
     bool levelComplete;
+    float timerVictory = 2;
     private void Awake()
     {
         if (instance == null)
@@ -27,13 +28,23 @@ public class GameManager : MonoBehaviour
     }
     private void Update()
     {
-        if(recollectedFormas == numberToSucces && numberToSucces != 0 && !completed)
+        if(recollectedFormas == numberToSucces && numberToSucces != 0 && !completed && levelComplete == false)
         {
             completed = true;
             fallSpeed = 0;
             basketSpeed = 0;
-            UIManager.instance.Victory();
-            SoundNumberManager.instance.PlaySFX(SoundNumberManager.instance.victorySound);
+            
+        }
+        if (completed)
+        {
+            timerVictory -= Time.deltaTime;
+            if (timerVictory <= 0)
+            {
+                UIManager.instance.Victory();
+                SoundNumberManager.instance.PlaySFX(SoundNumberManager.instance.victorySound);
+                timerVictory = 2f;
+                completed = false;
+            }
         }
     }
     public void SetCompleted(bool completed)
@@ -59,6 +70,7 @@ public class GameManager : MonoBehaviour
     public void SumaRecollectedFormas()
     {
         this.recollectedFormas ++;
+        SoundNumberManager.instance.PlaySFX(SoundNumberManager.instance.soundsNumbers[recollectedFormas-1]);
     }
     public float GetFallSpeed()
     {

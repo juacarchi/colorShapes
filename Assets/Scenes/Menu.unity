@@ -152,7 +152,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   victorySound: {fileID: 8300000, guid: 133bd57cbbb766f41b910413a0d364c5, type: 3}
-  soundsNumbers: []
+  soundsNumbers:
+  - {fileID: 8300000, guid: b0ff3b35c450842408d1917ecfbbf7a9, type: 3}
+  - {fileID: 8300000, guid: a1833a3ffcadd6a4ab8417bb65ddc47c, type: 3}
+  - {fileID: 8300000, guid: 214c53a383db66140949a6d14f179334, type: 3}
+  - {fileID: 8300000, guid: bb579f20b4e328a498c42b2c0f32c972, type: 3}
+  - {fileID: 8300000, guid: 4c0dc6b8c5bf6194ca3ccce8b8f57d7c, type: 3}
+  - {fileID: 8300000, guid: 7d3896251522944479a0106f4823fba9, type: 3}
+  - {fileID: 8300000, guid: fa04ee5d7b0a4b448946d52a5efee538, type: 3}
+  - {fileID: 8300000, guid: c0131c0441299b34887a03546b0dfe95, type: 3}
+  - {fileID: 8300000, guid: 8fb0baf6f8bc33f499cf9674a402c170, type: 3}
 --- !u!82 &35095845
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1955,6 +1964,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1243884229809173959, guid: d1f575014fa259a41b8a26c570b228d1,
+        type: 3}
+      propertyPath: Priority
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 1243884229809173959, guid: d1f575014fa259a41b8a26c570b228d1,
+        type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2325063853051181146, guid: d1f575014fa259a41b8a26c570b228d1,
         type: 3}
       propertyPath: m_Name
@@ -2232,7 +2251,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f2b4a69e0bbc20c499968eb06a17a926, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.52
+  m_Volume: 0.102
   m_Pitch: 1
   Loop: 1
   Mute: 0

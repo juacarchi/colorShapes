@@ -10,7 +10,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip correctSound;
     public static SoundManager instance;
     public AudioSource audioSource;
-    public AudioClip[] numberSounds;
+    
     //Aqui podemos meter una serie de AudioClip para poder llamarlos desde otros elementos.
     private void Awake()
     {
