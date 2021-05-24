@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344c5d78e1e9d2f4abc74dd539d953f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameForma: ROMBO ROJO
   tagCorrecto: romboRojo
   correctGO: {fileID: 4702723869938868851, guid: 3215b8a172109284db4a98294f1e8802,
     type: 3}
@@ -64,4 +65,4 @@ MonoBehaviour:
   - {fileID: 2510028641755796490, guid: 2e572619194b71744ad9a0e48ce40487, type: 3}
   spriteForma: {fileID: -6044282588099607736, guid: 635e7681bf125504abe72ae99f926f91,
     type: 3}
-  audioForma: {fileID: 8300000, guid: 478263aaf4032a24dab819332fefff27, type: 3}
+  audioForma: {fileID: 8300000, guid: 32b6ec7f88c4b73419bf0d650ecfd2bf, type: 3}

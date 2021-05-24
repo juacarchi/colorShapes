@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344c5d78e1e9d2f4abc74dd539d953f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameForma: ROMBO AMARILLO
   tagCorrecto: romboAmarillo
   correctGO: {fileID: 3699059277053797132, guid: 5a8ed2fba0f49a54bb15fca80ee5bfeb,
     type: 3}
@@ -64,4 +65,4 @@ MonoBehaviour:
   - {fileID: 6202299171693893066, guid: b9620ca066635934e843312867914edb, type: 3}
   spriteForma: {fileID: 5231192962050463791, guid: 635e7681bf125504abe72ae99f926f91,
     type: 3}
-  audioForma: {fileID: 8300000, guid: 7dea0cd6377156143a1543149e585041, type: 3}
+  audioForma: {fileID: 8300000, guid: 8beab2fb2880eb94589a59f1d55e4a77, type: 3}

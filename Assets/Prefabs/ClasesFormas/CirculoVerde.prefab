@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344c5d78e1e9d2f4abc74dd539d953f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameForma: "C\xCDRCULO VERDE"
   tagCorrecto: circuloVerde
   correctGO: {fileID: 753152072151876435, guid: 7649b3817ec7eaa46baae1b525b6804f,
     type: 3}
@@ -64,4 +65,4 @@ MonoBehaviour:
   - {fileID: 6202299171693893066, guid: b9620ca066635934e843312867914edb, type: 3}
   spriteForma: {fileID: -1774095421672643971, guid: e5740fcd1321baf438b49fe96aee75a3,
     type: 3}
-  audioForma: {fileID: 8300000, guid: df6dd4483a146c542a491888b302d825, type: 3}
+  audioForma: {fileID: 8300000, guid: 2c63e2d0937e74c418dd4e3721e5ed03, type: 3}

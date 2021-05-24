@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344c5d78e1e9d2f4abc74dd539d953f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameForma: "C\xCDRCULO AMARILLO"
   tagCorrecto: circuloAmarillo
   correctGO: {fileID: 2109541673059587009, guid: 391be082e5bfefb43ac0259afd917c04,
     type: 3}
@@ -64,4 +65,4 @@ MonoBehaviour:
   - {fileID: 6202299171693893066, guid: b9620ca066635934e843312867914edb, type: 3}
   spriteForma: {fileID: 2055626263525478621, guid: e5740fcd1321baf438b49fe96aee75a3,
     type: 3}
-  audioForma: {fileID: 8300000, guid: 4744d92983639414ab633d00e9b5016f, type: 3}
+  audioForma: {fileID: 8300000, guid: 59dfcabe6fa3581499e4d98f2ad73d1c, type: 3}

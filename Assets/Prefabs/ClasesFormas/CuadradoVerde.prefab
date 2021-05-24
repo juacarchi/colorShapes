@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344c5d78e1e9d2f4abc74dd539d953f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameForma: CUADRADO VERDE
   tagCorrecto: cuadradoVerde
   correctGO: {fileID: 8015320987093859825, guid: c38f71611fa198542b1a397420898a46,
     type: 3}
@@ -64,4 +65,4 @@ MonoBehaviour:
   - {fileID: 6202299171693893066, guid: b9620ca066635934e843312867914edb, type: 3}
   spriteForma: {fileID: 8054180052719094536, guid: 8266b4af24ee87f4fa46f515bacab004,
     type: 3}
-  audioForma: {fileID: 8300000, guid: a94da6d38fac5644a8d9b915cc610bba, type: 3}
+  audioForma: {fileID: 8300000, guid: a7295e5f618d8574e8fc8cdd5dc71e87, type: 3}

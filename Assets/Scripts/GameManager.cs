@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
     private void Update()
     {
         if(recollectedFormas == numberToSucces && numberToSucces != 0 && !completed && levelComplete == false)

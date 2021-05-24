@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344c5d78e1e9d2f4abc74dd539d953f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameForma: ESTRELLA ROJA
   tagCorrecto: estrellaRoja
   correctGO: {fileID: 4970912280579419019, guid: f76df9789c4fc434692d61423e9258c3,
     type: 3}
@@ -64,4 +65,4 @@ MonoBehaviour:
   - {fileID: 6202299171693893066, guid: b9620ca066635934e843312867914edb, type: 3}
   spriteForma: {fileID: 118085741552284039, guid: e6826b18e84decf469691b465c4f7448,
     type: 3}
-  audioForma: {fileID: 8300000, guid: 1cc9c4b531733c041ab4fe8850060ea2, type: 3}
+  audioForma: {fileID: 8300000, guid: 9ed401446ffb8a349af7ec1ac575500c, type: 3}

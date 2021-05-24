@@ -43,6 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344c5d78e1e9d2f4abc74dd539d953f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameForma: "C\xCDRCULO ROJO"
   tagCorrecto: circuloRojo
   correctGO: {fileID: 7932545212612235066, guid: c7dda7daefd9a234695429449c2620b3,
     type: 3}
@@ -64,4 +65,4 @@ MonoBehaviour:
   - {fileID: 3871049220954387611, guid: 6d276100ae42e5b4581ce4fa022d3cc5, type: 3}
   spriteForma: {fileID: 8224074293810048653, guid: e5740fcd1321baf438b49fe96aee75a3,
     type: 3}
-  audioForma: {fileID: 8300000, guid: f7af373669ac3f6478afbb36d8fc41d2, type: 3}
+  audioForma: {fileID: 8300000, guid: af0397c186f85f3449896b34b7713cc7, type: 3}

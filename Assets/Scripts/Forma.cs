@@ -4,23 +4,26 @@ using UnityEngine;
 
 public class Forma : MonoBehaviour
 {
-    
+    public string nameForma;
     public string tagCorrecto;
     public GameObject correctGO;
     public List<GameObject> otherGO;
     public Sprite spriteForma;
     public AudioClip audioForma;
     
-    public Forma( string tagCorrecto, GameObject correctGO, List<GameObject> otherGO, Sprite spriteForma)
+    public Forma( string nameForma, string tagCorrecto, GameObject correctGO, List<GameObject> otherGO, Sprite spriteForma)
     {
-        
+        this.nameForma = nameForma;
         this.tagCorrecto = tagCorrecto;
         this.correctGO = correctGO;
         this.otherGO = otherGO;
         this.spriteForma = spriteForma;
         
     }
-   
+   public string GetNameForma()
+    {
+        return this.nameForma;
+    }
     public string GetTagCorrecto()
     {
         return this.tagCorrecto;

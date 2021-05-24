@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class GameplayManager : MonoBehaviour
 {
     public Text numberText;
+    public Text nameForma;
     public SpriteRenderer posSpriteForma;
     Forma newForma;
     string correctTag;
@@ -75,6 +76,7 @@ public class GameplayManager : MonoBehaviour
         SoundManager.instance.PlaySFX(soundForma);
         correctForm = newForma.GetCorrectGO();
         incorrectForm = newForma.GetOtherGO();
+        nameForma.text = newForma.GetNameForma();
     }
     
     public void Update()
@@ -141,12 +143,14 @@ public class GameplayManager : MonoBehaviour
         GameManager.instance.Resume();
         GameManager.instance.SetRecollectedFormas(0);
         ManagerScene.instance.SetNumberSceneToChange(1);
+        GameManager.instance.SetLevelComplete(false);
         TransitionManager.instance.AnimateTransition();
     }
     public void ReturnMenu()
     {
         GameManager.instance.Resume();
         GameManager.instance.SetRecollectedFormas(0);
+        GameManager.instance.SetLevelComplete(false);
         ManagerScene.instance.SetNumberSceneToChange(0);
         TransitionManager.instance.AnimateTransition();
     }
