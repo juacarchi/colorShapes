@@ -7,8 +7,9 @@ public class UIManager : MonoBehaviour
 {
     public Button pauseButton;
     public Text textPuntuacion;
+    public Text numberForma;
     public Canvas canvasPause;
-    public Canvas canvasVictory;
+    public GameObject canvasVictory;
     Animator animVictory;
     public static UIManager instance;
     private void Awake()
@@ -23,13 +24,14 @@ public class UIManager : MonoBehaviour
             Destroy(this.gameObject);
         }
         canvasPause.enabled = false;
-        canvasVictory.enabled = false;
+        canvasVictory.SetActive(false);
         animVictory=canvasVictory.GetComponent<Animator>();
     }
     // Update is called once per frame
     void Update()
     {
         textPuntuacion.text = GameManager.instance.GetRecollectedFormas().ToString();
+        numberForma.text = GameManager.instance.GetNumberForma().ToString();
     }
     public void OpenPause()
     {
@@ -38,12 +40,11 @@ public class UIManager : MonoBehaviour
     public void ClosePause()
     {
         canvasPause.enabled = false;
-        canvasVictory.enabled = false;
+        
     }
     public void Victory()
     {
-        canvasVictory.enabled = true;
-        animVictory.SetTrigger("StartAnim");
+        canvasVictory.SetActive(true);
         pauseButton.interactable = false;
         GameManager.instance.SetLevelComplete(true);
     }

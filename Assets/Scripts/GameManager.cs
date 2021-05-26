@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     bool completed;
     bool levelComplete;
     float timerVictory = 2;
+    int numberForma;
     private void Awake()
     {
         if (instance == null)
@@ -71,6 +72,7 @@ public class GameManager : MonoBehaviour
     public void SumaRecollectedFormas()
     {
         this.recollectedFormas ++;
+        SubstractNumberForma();
         SoundNumberManager.instance.PlaySFX(SoundNumberManager.instance.soundsNumbers[recollectedFormas-1]);
     }
     public float GetFallSpeed()
@@ -121,7 +123,18 @@ public class GameManager : MonoBehaviour
         UIManager.instance.ClosePause();
         //CERRAR PANEL UI
     }
-    
+    public void SetNumberForma(int numberForma)
+    {
+        this.numberForma = numberForma;
+    }
+    public int GetNumberForma()
+    {
+        return numberForma;
+    }
+    public void SubstractNumberForma()
+    {
+        numberForma--;
+    }
       
    
 }

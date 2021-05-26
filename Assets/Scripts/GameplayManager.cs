@@ -65,6 +65,7 @@ public class GameplayManager : MonoBehaviour
             numberToSucces = Random.Range(4, 9);
         }
         GameManager.instance.SetNumberToSucces(numberToSucces);
+        GameManager.instance.SetNumberForma(numberToSucces);
         numberText.text = numberToSucces.ToString();
         n_forma = Random.Range(0, formasList.Count);
         newForma = formasList[n_forma].GetComponent<Forma>();
@@ -136,10 +137,12 @@ public class GameplayManager : MonoBehaviour
     }
     public void PlayButton()
     {
+        
         SoundManager.instance.PlaySFX(SoundManager.instance.buttonSound);
     }
     public void ResetGame()
     {
+        
         GameManager.instance.Resume();
         GameManager.instance.SetRecollectedFormas(0);
         ManagerScene.instance.SetNumberSceneToChange(1);
